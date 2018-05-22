@@ -1,0 +1,33 @@
+.announcement-description {
+    position: relative;
+    margin: 2rem 0 0;
+    padding-left: var(--announcement-gap, 1rem);
+    padding-right: var(--announcement-gap, 1rem);
+    color: var(--color-grey, #78909C);
+}
+
+.announcement-description textarea {
+    width: 100%;
+    margin: 2rem 0 0;
+    border: none;
+    border-bottom: 2px solid var(--color-light-grey, #D7E0E2);
+    outline: none;
+    resize: none;
+    padding-left: var(--announcement-gap, 1rem);
+    padding-right: var(--announcement-gap, 1rem);
+}
+
+.announcement-description textarea:focus + label {
+    opacity: 0;
+}
+
+.announcement-description textarea:valid + label {
+    opacity: 0;
+}
+
+.announcement-description label {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    transition: opacity .3s ease-out;
+}

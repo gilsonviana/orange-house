@@ -1,0 +1,30 @@
+.announcement-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    padding-left: var(--announcement-gap, 2rem);
+    padding-right: var(--announcement-gap, 2rem);
+}
+
+.announcement-footer .announcement-footer__control {    
+    display: flex;
+    background: var(--color-light-grey, #D7E0E2);
+    cursor: pointer;
+    padding: .3rem 1rem;
+    transition: background .3s linear;
+    box-shadow: var(--element-shadow);    
+}
+
+.announcement-footer .announcement-footer__control > div {
+    display: flex;
+    align-items: center;
+}
+
+.announcement-footer .announcement-footer__control:hover {
+    background-color: var(--color-grey, #78909C);
+}
+
+
+.announcement-footer .announcement-footer__control img {
+    margin: 0 .2rem 0;
+}

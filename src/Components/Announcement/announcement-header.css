@@ -1,0 +1,43 @@
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-light-grey, #D7E0E2);
+    padding: .5rem 0;
+    padding-left: var(--announcement-gap, 1rem);
+    padding-right: var(--announcement-gap, 1rem);
+}
+
+.announcement-header input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.announcement-header input[type="radio"]:checked + label {
+    background-color: var(--primary-color, #F7630C);
+    color: var(--color-white, #fff);
+    box-shadow: var(--element-shadow);
+}
+
+.announcement-header div label {
+    cursor: pointer;
+    width: 5rem;
+    display: inline-block;    
+    text-align: center; 
+    padding: .3rem 0;   
+    transition: background .3s linear;
+}
+
+.announcement-header div label:hover {
+    background-color: var(--color-grey, #78909C);
+}
+
+.announcement-header input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: .3rem .5rem;
+    background: var(--color-grey, #78909C);
+    height: 100%;
+    color: var(--color-white, #fff);
+    font-weight: var(--font-bold, 700);
+    box-shadow: var(--element-shadow);
+}
