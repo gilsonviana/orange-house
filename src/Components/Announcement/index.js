@@ -6,11 +6,7 @@ import AnnouncementFooter from './AnnouncementFooter/announcement-footer';
 
 import './announcement.css';
 
-export default class Announcement extends Component {
-    constructor(props) {
-        super(props);        
-    }
-
+export default class Announcement extends Component {    
     render() {
         return(
             <div className="announcement">
